@@ -6,6 +6,14 @@ $headerColorLinkHover: #354052;
 $h3Color: #b6becb;
 $h3MenuLink: #354052;
 
+button.green {
+    padding: 10px 15px;
+    color: white;
+    background-color: #38b449;
+    border: 1px solid #249533;
+    border-radius: 5px;
+}
+
 .clearfix {
     clear: both;
 }
@@ -19,6 +27,7 @@ body {
     div.wrapper {
         margin: 0 auto;
         padding: 0;
+        padding-bottom: 30px;
         background-color: $wrapperBgColor;
         min-height: 600px; // test - delete this
         
@@ -145,11 +154,12 @@ body {
         main {
             margin: 0 auto;
             padding: 0;
-            display: flex;
             width: 1200px;
+            // outline: 1px solid red;
             
             div.left-column {
-                width: 350px;
+                float: left;
+                width: 346px;
                 
                 // background-color: yellow;
                 h3 {
@@ -200,41 +210,115 @@ body {
             }
 
             div.right-column {
-                justify-content: space-between;
-                width: 100%;
-                background-color: blue;
+                float:left;
+                width: 850px;
+                
                 
                 div.upper {
                     display: flex;
-                    justify-content: space-between;
-
+                    justify-content: space-around;
+                    align-items: center;
                     div.upper-mutual {
-                        min-width: 300px;
-                        background-color: #fff;
+                        min-width: 350px;
+                        max-width: 400px;
+                        min-height: 200px;
+                        background-color: white;
                         border: 1px solid $borderColor;
                         border-radius: 5px;
+                        padding: 5px;
                         margin: 10px 0;
-                        display: flex;
-                        // justify-content: center;
-                        align-content: center;
-                        justify-content: space-between;
+                        font-size: 0.8em;
+                        padding: 10px;
+
                         img {
-                            margin: 2px;
-                            width: 400px;
-                            height: 200px;
+                            // width: 400px; //    delete
+                            // height: 200px;  //  delete
+                            max-width: 400px;
+                            max-height: 200px;
+                            border-radius: 5px;
+                        }
+                        
+                        .upper-mutual-description {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-end;
+                            margin: 5px 0;
+                            h4 {
+                                margin: 0;
+                                padding: 0;
+                                color: #354052;
+                            }
+                            p {
+                                color: #a7b1bf;
+                            }
                         }
                     }
 
-                    div.upper-left {
-                        // background-color: orange;
-                        margin-left: 10px;
-                        margin-right: 5px;
+                    div.upper-left{
+                        // outline: 1px solid red;
                     }
-
-                    div.upper-right {
-                        // background-color: yellow;
-                        margin-left: 5px;
-                        margin-right: 10px;
+                    
+                    div.upper-right{
+                        // outline: 1px solid brown;
+                        
+                    }
+                }
+                
+                div.content {
+                    h3 {
+                        color: #354052;
+                        font-size: 1.3em;
+                        font-weight: normal;
+                        background-color: #fff;
+                        padding: 10px;
+                        margin: 0;
+                        border-radius: 5px 5px 0 0;
+                        border: 1px solid $borderColor;
+                        span {
+                            color: #e8ebee;
+                            font-size: 0.8em;
+                        }
+                    }
+                    div.eventsHeaders {
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border: 1px solid $borderColor;
+                        border-top: none;
+                        background-color: #f5f8fa;
+                        h4 {
+                            font-size: 0.8em;
+                            max-width: 200px;
+                            margin: 0;
+                            padding: 10px;
+                            color: #7f8fa4;
+                            font-weight: 600;
+                            
+                        }
+                        h4:first-child {
+                            padding-left: 10px;
+                        }
+                    }
+                    div.event {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 10px;
+                        color: #333c48;
+                        background-color: #fff;
+                        font-size: 0.9em;
+                        font-size: 600;
+                        border: 1px solid $borderColor;
+                        border-top: none;
+                        
+                        span {
+                            display: block;
+                            color: #a7b1bf;
+                            font-size: 0.8em;
+                            font-weight: normal;
+                        }
                     }
                 }
             }
