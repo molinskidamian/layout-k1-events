@@ -1,0 +1,182 @@
+.clearfix {
+  clear: both; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px; }
+  body div.wrapper {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #eff3f6;
+    min-height: 600px; }
+    body div.wrapper header {
+      border-bottom: 1 px solid #e6eaee;
+      margin-bottom: 30px;
+      background-color: #fff; }
+      body div.wrapper header div.header-inner {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+        height: 69px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        body div.wrapper header div.header-inner div.header-left {
+          width: 33%; }
+        body div.wrapper header div.header-inner div.header-left > ul.nav-ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          list-style: none;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          margin: 0; }
+        body div.wrapper header div.header-inner div.header-left > ul > li:hover > ul.sub-menu {
+          display: block; }
+        body div.wrapper header div.header-inner div.header-left > ul > li {
+          margin: 0 20px;
+          position: relative; }
+        body div.wrapper header div.header-inner div.header-left > ul > li > a {
+          text-decoration: none;
+          padding: 0 5px;
+          line-height: 69px;
+          color: #9fa9ba;
+          font-size: 14px;
+          font-weight: 600; }
+        body div.wrapper header div.header-inner div.header-left > ul > li > a:hover {
+          color: #354052; }
+        body div.wrapper header div.header-inner ul.sub-menu {
+          display: none;
+          list-style: none;
+          z-index: 200;
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          top: 69px;
+          left: 0;
+          background-color: #fff; }
+        body div.wrapper header div.header-inner ul.sub-menu > li {
+          display: block;
+          margin: 0;
+          padding: 5px 10px; }
+          body div.wrapper header div.header-inner ul.sub-menu > li a {
+            white-space: nowrap;
+            text-decoration: none;
+            font-weight: 600; }
+          body div.wrapper header div.header-inner ul.sub-menu > li a:link, body div.wrapper header div.header-inner ul.sub-menu > li a:visited {
+            color: #9fa9ba; }
+        body div.wrapper header div.header-inner ul.sub-menu li a:hover {
+          color: #354052; }
+        body div.wrapper header div.header-inner div.header-middle {
+          width: 33%;
+          text-align: center; }
+          body div.wrapper header div.header-inner div.header-middle img {
+            padding-top: 4px; }
+        body div.wrapper header div.header-inner div.header-right {
+          width: 33%;
+          text-align: center;
+          line-height: 69px;
+          position: relative; }
+          body div.wrapper header div.header-inner div.header-right input[type=text] {
+            border: 1px solid #e6eaee;
+            color: #9fa9ba;
+            padding: 12px;
+            border-radius: 4px;
+            width: 60%;
+            height: 20%; }
+          body div.wrapper header div.header-inner div.header-right img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50px;
+            position: absolute;
+            right: 15px;
+            top: 25%; }
+    body div.wrapper main {
+      margin: 0 auto;
+      padding: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 1200px; }
+      body div.wrapper main div.left-column {
+        width: 350px; }
+        body div.wrapper main div.left-column h3 {
+          text-transform: uppercase;
+          font-size: 0.8em;
+          color: #b6becb; }
+        body div.wrapper main div.left-column ul {
+          list-style: none;
+          padding: 0;
+          margin: 0; }
+          body div.wrapper main div.left-column ul li {
+            white-space: nowrap;
+            margin: 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center; }
+            body div.wrapper main div.left-column ul li a {
+              font-weight: 600;
+              padding: 4px 6px; }
+              body div.wrapper main div.left-column ul li a div.content {
+                float: left; }
+              body div.wrapper main div.left-column ul li a div.count {
+                float: right;
+                width: 20px;
+                background-color: #ff7800;
+                color: #fff;
+                border-radius: 100%;
+                text-align: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                margin-left: 10px; }
+            body div.wrapper main div.left-column ul li a:link, body div.wrapper main div.left-column ul li a:visited {
+              text-decoration: none;
+              color: #354052; }
+            body div.wrapper main div.left-column ul li a:hover {
+              color: #fff;
+              background-color: #279cf4;
+              border-radius: 5px; }
+      body div.wrapper main div.right-column {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 100%;
+        background-color: blue; }
+        body div.wrapper main div.right-column div.upper {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+          body div.wrapper main div.right-column div.upper div.upper-mutual {
+            min-width: 300px;
+            background-color: #fff;
+            border: 1px solid #e6eaee;
+            border-radius: 5px;
+            margin: 10px 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-line-pack: center;
+                align-content: center;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
+            body div.wrapper main div.right-column div.upper div.upper-mutual img {
+              margin: 2px;
+              width: 400px;
+              height: 200px; }
+          body div.wrapper main div.right-column div.upper div.upper-left {
+            margin-left: 10px;
+            margin-right: 5px; }
+          body div.wrapper main div.right-column div.upper div.upper-right {
+            margin-left: 5px;
+            margin-right: 10px; }
